@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Other Side</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        /* 상단 바 스타일 */
+        .navbar {
+            width: 100%; /* 너비 100% */
+            display: flex; /* Flexbox 사용 */
+            justify-content: space-between; /* 좌우 정렬 */
+            padding: 10px 0; /* 여백 추가 */
+        }
+        .navbar .left {
+            font-weight: bold; /* 텍스트 굵게 */
+            color: black; /* 텍스트 색상 */
+        }
+        .navbar .right {
+            display: flex; /* Flexbox 사용 */
+        }
+        .navbar .right a {
+            margin-left: 20px; /* 항목 간 여백 */
+            text-decoration: none; /* 밑줄 제거 */
+            color: black; /* 텍스트 색상 */
+            padding: 14px 20px; /* 여백 설정 */
+            transition: background-color 0.3s, color 0.3s; /* 부드러운 효과 */
+        }
+        .navbar .right a:hover {
+            background-color: #ddd; /* 마우스 오버 시 배경 색상 */
+            color: black; /* 마우스 오버 시 텍스트 색상 */
+            text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+        }
+        .content {
+            display: flex; /* Flexbox 사용 */
+            align-items: flex-start; /* 세로 상단 정렬 */
+            margin-top: 200px; /* 상단 여백 추가 (더 내림) */
+        }
+        .content img {
+            width: 500px; /* 이미지 크기 조정 */
+            height: auto; /* 비율 유지 */
+            margin-right: 20px; /* 텍스트와의 간격 */
+            border-radius: 4px; /* 모서리 둥글게 */
+        }
+        .content p {
+            line-height: 1.5; /* 줄 간격 조정 */
+            color: #333; /* 텍스트 색상 */
+            margin: 0; /* 여백 제거 */
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        li {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 바 -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="left">gmfx</a>
+            <div class="right">
+                <a href="one.html">impress</a>
+                <a href="two.html">Category</a>
+                <a href="four.html">Direction</a>
+                <a href="five.html">suggest</a>
+                <a href="three.html">The Other Side</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <h1>영화의 본질</h1> <!-- 제목 -->
+    <div class="content">
+        <img src="기생충.jpg" alt="The Other Side"> <!-- 이미지 파일 경로 -->
+        <p>
+            
+        <li>영화의 본질은 이야기를 시각적, 청각적 경험으로<br> 전달하는 예술이다.
+            영화는 스토리, 감정, 메시지를 이미지, 소리, <br>편집을 통해 시간과 공간을 자유롭게 구성하며,<br>
+            관객에게 단순한 오락 이상의 몰입감을 제공하는 종합 예술 형태이다.</li>
+        </p>
+    </div>
+
+</body>
+</html>
