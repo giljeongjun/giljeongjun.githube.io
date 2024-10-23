@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 추천</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .navbar .left {
+            font-weight: bold;
+            color: black;
+        }
+        .navbar .right {
+            display: flex;
+        }
+        .navbar .right a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            padding: 14px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar .right a:hover {
+            background-color: #ddd;
+            color: black;
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #222;
+        }
+        .movie {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative; /* 부모 요소에 위치 설정 */
+        }
+        .movie img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .movie-info {
+            margin-left: 20px;
+            transition: transform 0.3s; /* 부드러운 효과 추가 */
+        }
+        .movie-info h3 {
+            margin: 0 0 10px;
+        }
+        .movie-info p {
+            margin: 0;
+            color: #666;
+        }
+        .movie:hover .movie-info {
+            transform: scale(1.05); /* 마우스 오버 시 확대 효과 */
+            color: #000; /* 텍스트 색상 변경 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 상단바 -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="left">gmfx</a>
+            <div class="right">
+                <a href="one.html">impress</a>
+                <a href="two.html">Category</a>
+                <a href="four.html">Direction</a>
+                <a href="three.html">suggest</a>
+                <a href="five.html">The Other Side</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>영화 추천</h1>
+        <div class="movie">
+            <img src="토이스토리.jpg" alt="영화 포스터">
+            <div class="movie-info">
+                <h3>토이 스토리 (Toy Story)</h3>
+                <p>장난감들이 주인 없는 시간에 벌어지는 신나는 모험을 그린 애니메이션.</p>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="부다페스트.jpg" alt="영화 포스터">
+            <div class="movie-info">
+                <h3>그랜드 부다페스트 호텔 (The Grand Budapest Hotel)</h3>
+                <p>유럽의 한 호텔에서 벌어지는 사건과 주인공의 우정을 그린 독특한 스타일의 영화.</p>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="인셉션.jpg" alt="영화 포스터">
+            <div class="movie-info">
+                <h3>인셉션 (Inception)</h3>
+                <p>꿈을 조작하는 도둑의 이야기를 그린 SF 스릴러로, 현실과 꿈의 경계를 탐구한다.</p>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="어벤져스.jpg" alt="영화 포스터">
+            <div class="movie-info">
+                <h3>어벤져스: 엔드게임 (Avengers: Endgame)</h3>
+                <p>마블 히어로들이 우주를 구하기 위해 힘을 합치는 감동적인 이야기.</p>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="라이온킹.jpg" alt="영화 포스터">
+            <div class="movie-info">
+                <h3>라이온 킹 (The Lion King)</h3>
+                <p>사자의 왕이 되는 과정을 그린 감동적인 애니메이션, 가족과의 사랑을 주제로 한다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

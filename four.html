@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        /* 상단 바 스타일 */
+        .navbar {
+            width: 100%; /* 너비 100% */
+            display: flex; /* Flexbox 사용 */
+            justify-content: space-between; /* 좌우 정렬 */
+            padding: 10px 0; /* 여백 추가 */
+        }
+        .navbar .left {
+            font-weight: bold; /* 텍스트 굵게 */
+            color: black; /* 텍스트 색상 */
+           
+        }
+        .navbar .right {
+            display: flex; /* Flexbox 사용 */
+        }
+        .navbar .right a {
+            margin-left: 20px; /* 항목 간 여백 */
+            text-decoration: none; /* 밑줄 제거 */
+            color: black; /* 텍스트 색상 */
+            padding: 14px 20px; /* 여백 설정 */
+            transition: background-color 0.3s, color 0.3s; /* 부드러운 효과 */
+        }
+        .navbar .right a:hover {
+            background-color: #ddd; /* 마우스 오버 시 배경 색상 */
+            color: black; /* 마우스 오버 시 텍스트 색상 */
+            text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+        }
+        .container {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        .card-wrapper {
+            display: inline-block;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            width: 300px;
+            margin: 10px;
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card p {
+            color: #777;
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+        .card .writer {
+            font-weight: bold;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 바 -->
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="left">gmfx</a>
+            <div class="right">
+                <a href="one.html">impress</a>
+                <a href="two.html">Category</a>
+                <a href="four.html">Direction</a>
+                <a href="three.html">suggest</a>
+                <a href="five.html">The Other Side</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <h1>유명한 감독</h1>
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="봉준호.jpg" alt="위대한 쇼맨">
+                <h3>봉준호 감독</h3>
+                <p class="writer">대표적 영화:기생충</p>
+                <p>한국의 영화 감독이자 각본가로 독창적인 스토리텔링과 사회적 메시지가 담긴 작품들로 잘 알려져 있다.</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="크리스토퍼.jpg" alt="댓글부대">
+                <h3>크리스토퍼 놀란</h3>
+                <p class="writer">대표적 영화:오펜하이머</p>
+                <p>영국 출신의 영화 감독,각본가, 제작자로 혁신적인 스토리텔링과 시각 효과로 유명.</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="스티븐.jpg" alt="악마를 보았다">
+                <h3>스티븐 스필버그</h3>
+                <p class="writer">대표적 영화:쥬라기 공원</p>
+                <p>미국의 영화 감독, 각본가, 제작자로, 현대 영화의 아이콘.</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="박찬욱.jpg" alt="그 해 우리는">
+                <h3>박찬욱</h3>
+                <p class="writer">대표적 영화:올드 보이</p>
+                <p>한국의 영화 감독, 각본가, 프로듀서로, 세계적으로 인정받는 예술가.</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="스콜세지.jpg" alt="눈물의 여왕">
+                <h3>마틴 스콜세지</h3>
+                <p class="writer">대표적 영화:좋은 친구들</p>
+                <p>미국의 영화 감독, 각본가, 프로듀서로, 영화 역사에서 가장 영향력 있는 인물 중 한 명으로 평가받고 있음.</p>
+            </div>
+      
+</body>
+</html>

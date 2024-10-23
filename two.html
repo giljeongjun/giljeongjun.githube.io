@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        /* 상단 바 스타일 */
+        .navbar {
+            width: 100%; /* 너비 100% */
+            display: flex; /* Flexbox 사용 */
+            justify-content: space-between; /* 좌우 정렬 */
+            padding: 10px 0; /* 여백 추가 */
+        }
+        .navbar .left {
+            font-weight: bold; /* 텍스트 굵게 */
+            color: black; /* 텍스트 색상 */
+           
+        }
+        .navbar .right {
+            display: flex; /* Flexbox 사용 */
+        }
+        .navbar .right a {
+            margin-left: 20px; /* 항목 간 여백 */
+            text-decoration: none; /* 밑줄 제거 */
+            color: black; /* 텍스트 색상 */
+            padding: 14px 20px; /* 여백 설정 */
+            transition: background-color 0.3s, color 0.3s; /* 부드러운 효과 */
+        }
+        .navbar .right a:hover {
+            background-color: #ddd; /* 마우스 오버 시 배경 색상 */
+            color: black; /* 마우스 오버 시 텍스트 색상 */
+            text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+        }
+        .container {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        .card-wrapper {
+            display: inline-block;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            width: 300px;
+            margin: 10px;
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card p {
+            color: #777;
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+        .card .writer {
+            font-weight: bold;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 상단 바 -->
+    
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="left">gmfx</a>
+            <div class="right">
+                <a href="one.html">impress</a>
+                <a href="two.html">Category</a>
+                <a href="four.html">Direction</a>
+                <a href="three.html">suggest</a>
+                <a href="five.html">The Other Side</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <h1>카테고리</h1>
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="위대한 쇼맨.jpg" alt="위대한 쇼맨">
+                <h3>위대한 쇼맨</h3>
+                <p class="writer">작가: 제니 빅스, 빌 콘돈</p>
+                <p>바넘의 서커스를 창립해 성공을 이루고, 가족과 명예 사이에서 갈등을 겪는 이야기를 그린 영화</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="댓글부대.jpg" alt="댓글부대">
+                <h3>댓글부대</h3>
+                <p class="writer">작가: 정다연</p>
+                <p>여론 조작을 위해 댓글을 조작하는 회사와 그로 인해 발생하는 도덕적 갈등을 그린 영화</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="악마를보았다.jpg" alt="악마를 보았다">
+                <h3>악마를 보았다</h3>
+                <p class="writer">작가: 이병헌</p>
+                <p>사랑하는 사람을 잃은 한 남자가 복수를 위해 범인을 추적하는 이야기를 그린 영화</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="그 해 우리는.jpg" alt="그 해 우리는">
+                <h3>그 해 우리는</h3>
+                <p class="writer">작가: 이서진</p>
+                <p>고등학교 시절 첫사랑을 겪은 두 사람이 성인이 되어 다시 만나는 이야기를 그린 드라마</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="눈물의 여왕.jpg" alt="눈물의 여왕">
+                <h3>눈물의 여왕</h3>
+                <p class="writer">작가: 박지은</p>
+                <p>남녀간 사랑과 복수, 가족의 갈등을 중심으로 한 이야기의 드라마</p>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="도깨비.jpg" alt="도깨비">
+                <h3>도깨비</h3>
+                <p class="writer">작가: 김은숙</p>
+                <p>불사의 도깨비와 그의 신부가 서로의 운명을 찾아가는 이야기로, 사랑과 삶, 죽음에 대한 성찰을 담은 드라마</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
